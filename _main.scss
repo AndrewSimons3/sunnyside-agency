@@ -42,8 +42,13 @@
 		width: 100%;
 		height: 325px;
 
-		.egg,
-		.cup {
+    .egg-dsk,
+    .cup-dsk {
+      display: none;
+    }
+    
+		.egg-mob,
+		.cup-mob {
 			height: 100%;
 			width: 100%;
 		}
@@ -95,10 +100,9 @@
 	.photography {
 		padding: 2rem;
 		height: 500px;
-
-		background-size: cover;
+    width: 100%;
+		background-size: contain;
 		background-repeat: no-repeat;
-		background-position: center;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
