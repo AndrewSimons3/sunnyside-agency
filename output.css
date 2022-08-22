@@ -10,7 +10,6 @@ html {
 
 body {
   min-height: 100%;
-  width: 100vw;
 }
 
 .container {
@@ -42,43 +41,169 @@ body {
   margin-top: 10rem;
 }
 .container .header .down-arrow {
-  right: 165px;
+  right: 45%;
   position: absolute;
-  bottom: 165px;
+  bottom: 26%;
 }
-.container .egg-container {
-  width: 100%;
-  height: 300px;
-}
-.container .egg-container .egg {
-  height: 100%;
-  width: 100%;
-}
+.container .egg-container,
 .container .cup-container {
-  height: 300px;
+  width: 100%;
+  height: 325px;
 }
+.container .egg-container .egg,
+.container .egg-container .cup,
+.container .cup-container .egg,
 .container .cup-container .cup {
   height: 100%;
   width: 100%;
 }
-.container .transform, .container .audience {
-  padding: 3rem;
+.container .transform,
+.container .audience {
+  padding: 5rem 3rem;
   text-align: center;
 }
-.container .transform h2, .container .audience h2 {
+.container .transform h2,
+.container .audience h2 {
   font-family: "Fraunces", serif;
   font-size: 30px;
   color: hsl(212deg, 27%, 19%);
   margin-bottom: 1.5rem;
 }
-.container .transform p, .container .audience p {
+.container .transform p,
+.container .audience p {
   font-size: 16px;
   font-family: "Barlow", serif;
   color: hsl(232deg, 10%, 55%);
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.container .transform a,
+.container .audience a {
+  text-decoration: none;
+  color: hsl(212deg, 27%, 19%);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+.container .graphic-design {
+  background-image: url("./images/mobile/image-graphic-design.jpg");
+  color: hsl(167deg, 40%, 24%);
+}
+.container .photography {
+  background-image: url("./images/mobile/image-photography.jpg");
+  color: hsl(198deg, 62%, 26%);
+}
+.container .graphic-design,
+.container .photography {
+  padding: 2rem;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.container .graphic-design h2,
+.container .photography h2 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
   margin-bottom: 1.5rem;
 }
+.container .graphic-design p,
+.container .photography p {
+  font-size: 16px;
+  font-family: "Barlow", serif;
+  color: hsl(167deg, 40%, 24%);
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.container .testimonial-container {
+  padding: 5rem 0;
+}
+.container .testimonial-container h2 {
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: hsl(210deg, 4%, 67%);
+  margin-bottom: 4rem;
+}
+.container .testimonial-container .testimonial {
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .testimonial-container .testimonial img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 2rem;
+}
+.container .testimonial-container .testimonial p {
+  font-size: 16px;
+  font-family: "Barlow", serif;
+  color: hsl(232deg, 10%, 55%);
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.container .testimonial-container .testimonial h3 {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  font-size: 24px;
+}
+.container .testimonial-container .testimonial span {
+  color: hsl(210deg, 4%, 67%);
+  font-size: 16px;
+  font-family: "Barlow", serif;
+  font-weight: 600;
+}
+.container .image-gallery {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.container .image-gallery img {
+  width: 100%;
+}
+.container footer {
+  background-color: hsl(168deg, 70%, 73%);
+  padding: 5rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.container footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 3rem;
+}
+.container footer li {
+  list-style: none;
+  font-size: 18px;
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  color: hsl(168deg, 34%, 41%);
+}
+.container footer img {
+  filter: invert(49%) sepia(14%) saturate(1092%) hue-rotate(118deg) brightness(97%) contrast(96%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -86,6 +211,22 @@ body {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (min-width: 756px) {
+  .container .header {
+    height: 100vh;
+    padding: 3rem 2rem;
+    background-image: url("./images/desktop/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .container .header .down-arrow {
+    right: 47%;
+    top: 43%;
+    position: absolute;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
