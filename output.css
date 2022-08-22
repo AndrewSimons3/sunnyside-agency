@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100%;
+  width: 100vw;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .header {
+  height: 100vh;
+  padding: 3rem 2rem;
+  background-image: url("./images/mobile/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.container .header .heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header .title {
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-size: 42px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 10rem;
+}
+.container .header .down-arrow {
+  right: 165px;
+  position: absolute;
+  bottom: 165px;
+}
+.container .egg-container {
+  width: 100%;
+  height: 300px;
+}
+.container .egg-container .egg {
+  height: 100%;
+  width: 100%;
+}
+.container .cup-container {
+  height: 300px;
+}
+.container .cup-container .cup {
+  height: 100%;
+  width: 100%;
+}
+.container .transform, .container .audience {
+  padding: 3rem;
+  text-align: center;
+}
+.container .transform h2, .container .audience h2 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(212deg, 27%, 19%);
+  margin-bottom: 1.5rem;
+}
+.container .transform p, .container .audience p {
+  font-size: 16px;
+  font-family: "Barlow", serif;
+  color: hsl(232deg, 10%, 55%);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=output.css.map */

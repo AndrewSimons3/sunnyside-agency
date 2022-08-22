@@ -1,0 +1,90 @@
+@import './variables';
+
+.container {
+	width: 100%;
+	height: 100%;
+
+	.header {
+		height: 100vh;
+		padding: 3rem 2rem;
+		background-image: url('./images/mobile/image-header.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+
+		.heading-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.title {
+			color: #fff;
+			font-family: 'Fraunces', serif;
+			font-size: 42px;
+			text-align: center;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			margin-top: 10rem;
+		}
+
+		.down-arrow {
+			right: 165px;
+			position: absolute;
+			bottom: 165px;
+		}
+	}
+
+	.egg-container {
+		width: 100%;
+		height: 300px;
+
+		.egg {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.cup-container {
+		height: 300px;
+
+		.cup {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.transform, .audience {
+		padding: 3rem;
+		text-align: center;
+
+		h2 {
+			font-family: 'Fraunces', serif;
+			font-size: 30px;
+      color: $Very-dark-desaturated-blue;
+      margin-bottom: 1.5rem;
+		}
+
+		p {
+      font-size: 16px;
+      font-family: 'Barlow', serif;
+      color: $Dark-grayish-blue;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+		}
+
+		a {
+		}
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
